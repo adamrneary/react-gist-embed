@@ -4,6 +4,12 @@ A simple react component to dynamically render a gist embed
 
 ## Introduction
 
+Gists are difficult to render dynamically because they use `document.write`.
+
+This component offers a simple workaround, allowing a React app to render a
+gist in an iframe and then adjust the height of the iframe to reflect the height
+of the child gist itself.
+
 ## Getting started
 
 Install via npm:
