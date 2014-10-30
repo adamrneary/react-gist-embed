@@ -1,6 +1,3 @@
-/**
- * @jsx React.DOM
- */
 'use strict';
 
 var React = require('react');
@@ -55,9 +52,7 @@ var GistEmbed = React.createClass({
     adjustHeightWhenComplete(gistFrame, gistFrameDoc);
   },
   render: function() {
-    return (
-      <div id={'gistZone' + this.props.gistId} />
-    );
+    return React.DOM.div({id: 'gistZone' + this.props.gistId});
   }
 });
 
