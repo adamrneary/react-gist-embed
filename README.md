@@ -15,7 +15,7 @@ npm install --save react-gist-embed
 Then simply require and pass a gistId.
 
 ```js
-var GistEmbed = require('../../src/react-gist-embed');
+var GistEmbed = require('react-gist-embed');
 
 <GistEmbed gistId='a759fd68208808020598'/>
 ```
