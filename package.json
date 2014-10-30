@@ -1,0 +1,29 @@
+{
+  "name": "react-gist-embed",
+  "version": "0.0.1",
+  "description": "React component to dynamically render a gist embed",
+  "homepage": "http://adamrneary.com/react-gist-embed",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adamrneary/react-gist-embed"
+  },
+  "bugs": {
+    "url": "git://github.com/adamrneary/react-gist-embed/issues"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "react",
+    "react-component",
+    "gist",
+    "embed",
+    "component"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Neary (adamrneary)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.11.0"
+  }
+}
