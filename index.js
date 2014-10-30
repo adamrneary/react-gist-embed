@@ -21,22 +21,22 @@ function adjustHeightWhenComplete(myFrame, myDoc) {
 var GistEmbed = React.createClass({
   displayName: 'GistEmbed',
   propTypes: {
-    gistID: PropTypes.number.isRequired
+    gistId: PropTypes.number.isRequired
   },
   componentDidMount: function() {
 
     // Create an iframe, append it to this document where specified
     var gistFrame = document.createElement("iframe");
     gistFrame.setAttribute("width", "100%");
-    gistFrame.id = "gistFrame" + this.props.gistID;
+    gistFrame.id = "gistFrame" + this.props.gistId;
 
-    var zone = document.getElementById("gistZone" + this.props.gistID);
+    var zone = document.getElementById("gistZone" + this.props.gistId);
     zone.innerHTML = "";
     zone.appendChild(gistFrame);
 
     // Create the iframe's document
 
-    var url = "https://gist.github.com/" + this.props.gistID + ".js";
+    var url = "https://gist.github.com/" + this.props.gistId + ".js";
     var gistFrameHTML = '<html><body><script type="text/javascript" src=' + url + '></script></body></html>';
 
     // Set iframe's document with a trigger for this document to adjust the height
@@ -56,7 +56,7 @@ var GistEmbed = React.createClass({
   },
   render: function() {
     return (
-      <div id={'gistZone' + this.props.gistID} />
+      <div id={'gistZone' + this.props.gistId} />
     );
   }
 });
