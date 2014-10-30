@@ -1,6 +1,6 @@
 {
   "name": "react-gist-embed",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React component to dynamically render a gist embed",
   "homepage": "http://adamrneary.com/react-gist-embed",
   "repository": {
