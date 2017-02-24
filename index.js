@@ -18,7 +18,7 @@ function adjustHeightWhenComplete(myFrame, myDoc) {
 var GistEmbed = React.createClass({
   displayName: 'GistEmbed',
   propTypes: {
-    gistId: PropTypes.number.isRequired
+    gistId: PropTypes.string.isRequired
   },
   componentDidMount: function() {
 
